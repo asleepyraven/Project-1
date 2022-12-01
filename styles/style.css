@@ -24,8 +24,8 @@
 .nav {
   /* Add flex properties here */
   display: flex;
-
-  gap: 200px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -36,18 +36,16 @@
 .nav__links {
   list-style: none;
   padding-left: 0;
-  margin-top: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   column-gap: 20px;
-  position: absolute;
   right: 80px;
 }
 
 .nav__link {
   color: #000000;
   text-decoration: none;
-  font-weight: bold;
-  color: #2f80ed;
 }
 
 .nav__link:hover {
@@ -59,7 +57,7 @@
   line-height: 76px;
   font-weight: 500;
   margin: 150px 0 0;
-  max-width: 465px;
+  max-width: 544px;
 }
 
 .header__description {
@@ -70,9 +68,7 @@
 }
 
 .header__image {
-  /* Write styles here */
   z-index: 1;
-
   max-width: 636px;
   position: absolute;
   top: 135px;
@@ -227,6 +223,8 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  height: 24px;
+  width: 24px;
 }
 
 .event-info__icon_type_calendar {
@@ -279,8 +277,8 @@
 }
 
 .person_name_feynman {
-  top: 30px;
-  right: 319px;
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
@@ -344,20 +342,17 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .step {
-  /* Add styles */
   flex-basis: 220px;
-  margin: auto;
   margin-top: 100px;
   justify-content: center;
-  gap: 40px;
 }
 
 .step__title {
@@ -406,8 +401,11 @@
 }
 
 .about__paragraph {
-  margin: 0;
   margin-bottom: 32px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
