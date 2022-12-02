@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: auto;
-  font-family: "Helvetica Neue", "Arial", "sans-serif";
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   background-color: #fff;
@@ -40,12 +40,13 @@
   margin-bottom: 0;
   display: flex;
   column-gap: 20px;
-  right: 80px;
+  position: static;
 }
 
 .nav__link {
   color: #000000;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav__link:hover {
@@ -136,6 +137,7 @@
   list-style: none;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 .card {
@@ -184,10 +186,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   background: #fff;
-}
-
-.event__icon {
-  margin-right: 10px;
 }
 
 .events__content {
@@ -402,6 +400,7 @@
 
 .about__paragraph {
   margin-bottom: 32px;
+  margin-top: 0;
 }
 
 .about__paragraph:last-child {
@@ -458,7 +457,7 @@
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 .footer__column-link {
