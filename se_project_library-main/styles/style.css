@@ -2,6 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: auto;
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
   font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -9,7 +10,6 @@
   color: #000000;
   justify-content: center;
 }
-
 .header {
   height: 100vh;
   min-height: 720px;
@@ -20,19 +20,16 @@
   position: relative;
   box-sizing: border-box;
 }
-
 .nav {
   /* Add flex properties here */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   width: 196px;
   height: 60px;
 }
-
 .nav__links {
   list-style: none;
   padding-left: 0;
@@ -40,6 +37,7 @@
   margin-bottom: 0;
   display: flex;
   column-gap: 20px;
+  right: 80px;
   position: static;
 }
 
@@ -52,7 +50,6 @@
 .nav__link:hover {
   color: #1f69c9;
 }
-
 .header__title {
   font-size: 66px;
   line-height: 76px;
@@ -60,14 +57,12 @@
   margin: 150px 0 0;
   max-width: 544px;
 }
-
 .header__description {
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
   max-width: 465px;
 }
-
 .header__image {
   z-index: 1;
   max-width: 636px;
@@ -75,7 +70,6 @@
   top: 135px;
   right: 20px;
 }
-
 .header__footer {
   position: absolute;
   left: 0;
@@ -87,38 +81,31 @@
   justify-content: space-between;
   box-sizing: border-box;
 }
-
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
-
 .header__link:hover {
   color: #1f69c9;
 }
-
 .header__address {
   margin: 0;
   color: #838383;
 }
-
 .content {
   background-color: #f2f2f2;
 }
-
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: #f2f2f2;
 }
-
 .staff__title {
   text-align: center;
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
 }
-
 .staff__subtitle {
   text-align: center;
   font-size: 20px;
@@ -126,7 +113,6 @@
   font-weight: 400;
   margin: 24px 0 0;
 }
-
 .staff__cards {
   max-width: 760px;
   margin: auto;
@@ -148,37 +134,30 @@
   width: 360px;
   height: 420px;
 }
-
 .card__content {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .card__title {
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
   margin: 0;
 }
-
 .card__text {
   margin: 20px 0 0;
   font-size: 16px;
   line-height: 24px;
 }
-
 .card__footer {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
-  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
-  /* In our case, this pushes the element down to the bottom */
   margin-top: auto;
 }
-
 .events {
   padding: 100px 0 120px 80px;
   display: flex;
@@ -188,35 +167,34 @@
   background: #fff;
 }
 
+.event__icon {
+  margin-right: 10px;
+}
+
 .events__content {
   flex-basis: 580px;
 }
-
 .events__heading {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
-
 .events__title {
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
   margin: 32px 0;
 }
-
 .events__info-section {
   margin-top: 32px;
 }
-
 .event-info__item {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
   font-weight: 500;
 }
-
 .event-info__icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -224,36 +202,29 @@
   height: 24px;
   width: 24px;
 }
-
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
 }
-
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
 }
-
 .event-info__text {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   margin: 0;
 }
-
 .events__description {
   margin: 40px 0 60px;
 }
-
 .events__more {
   margin-top: 60px;
   color: #2f80ed;
   text-decoration: none;
 }
-
 .events__more:hover {
   color: #1f69c9;
 }
-
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
@@ -261,11 +232,9 @@
   max-width: 780px;
   position: relative;
 }
-
 .events__image {
   max-width: 100%;
 }
-
 .person {
   position: absolute;
   display: flex;
@@ -273,60 +242,48 @@
   flex-direction: column;
   gap: 10px;
 }
-
 .person_name_feynman {
   top: -30px;
   left: 319px;
 }
-
 .person_name_burbidge {
   top: 96px;
   right: 125px;
 }
-
 .person_name_cannon {
   bottom: 18px;
   right: 216px;
 }
-
 .person_name_mitchell {
   bottom: 82px;
   left: 142px;
 }
-
 .person_name_tarter {
   top: 79px;
   left: 159px;
 }
-
 .person__image {
   max-width: 100%;
 }
-
 .person__image_size_l {
   width: 140px;
 }
-
 .person__image_size_m {
   width: 100px;
 }
-
 .person__image_size_s {
   width: 80px;
 }
-
 .person__caption {
   text-align: center;
   font-size: 14px;
   margin: 0;
 }
-
 .membership {
   padding-top: 100px;
   padding-bottom: 140px;
   background-color: #f2f2f2;
 }
-
 .membership__title {
   max-width: 574px;
   margin: 0 auto;
@@ -335,7 +292,6 @@
   font-weight: 500;
   line-height: 52px;
 }
-
 .membership__steps {
   list-style-type: none;
   padding: 0;
@@ -346,13 +302,11 @@
   align-items: center;
   gap: 40px;
 }
-
 .step {
   flex-basis: 220px;
   margin-top: 100px;
   justify-content: center;
 }
-
 .step__title {
   margin: 0;
   font-size: 20px;
@@ -361,15 +315,12 @@
   display: flex;
   align-items: center;
 }
-
 .step__icon {
   margin-left: 20px;
 }
-
 .step__description {
   margin: 10px 0 0;
 }
-
 .about {
   padding: 100px 80px;
   background-color: #1f1f1f;
@@ -380,7 +331,6 @@
   display: flex;
   gap: 120px;
 }
-
 .about__title {
   margin: 0;
   font-size: 20px;
@@ -389,7 +339,6 @@
   z-index: 1;
   display: flex;
 }
-
 .about__content {
   font-size: 20px;
   line-height: 30px;
@@ -406,7 +355,6 @@
 .about__paragraph:last-child {
   margin-bottom: 0;
 }
-
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -416,7 +364,6 @@
   left: -91px;
   top: -121px;
 }
-
 .footer {
   padding: 57px 102px 60px 80px;
   background-color: #1f1f1f;
@@ -424,39 +371,33 @@
   box-sizing: border-box;
   min-height: 224px;
 }
-
 .footer__columns {
   display: flex;
 }
-
 .footer__column_content_hours {
   margin-left: auto;
 }
-
 .footer__column_content_social {
   margin-left: 100px;
 }
-
 .footer__logo {
   width: 116px;
   height: 21px;
 }
-
 .footer__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .footer__list-item {
   margin-bottom: 16px;
 }
-
 .footer__list-item:last-of-type {
   margin-bottom: 0;
 }
 
 .footer__column-heading {
+  margin-bottom: 20px;
   margin: 0 0 20px;
 }
 
@@ -468,17 +409,14 @@
   line-height: 20px;
   text-decoration: none;
 }
-
 .footer__column-link:hover {
   color: #c1c1c1;
 }
-
 .footer__social-icon {
   height: 16px;
   width: 16px;
   margin-right: 10px;
 }
-
 .footer__copyright {
   margin: 108px 0 0;
 }

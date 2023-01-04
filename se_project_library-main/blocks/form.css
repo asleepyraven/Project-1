@@ -10,6 +10,15 @@
   margin: 0;
   border: none;
 }
+/*NEEDS CORRECTING:
+Please don't use negative margin values unnecessarily, they can lead to content overlap
+or broekn layout when the content changes.
+The design pictured in the brief doesn't require negative margins. Instead, it's necessary
+to revise `margin` and `gap` values that you currently use. There shuold be 32px between
+all elements of the form. Don't use both margin and gap to do it, they sum up and result
+in a bigger value. Choose one way to set this gap: either `gap` for the container or `margin`
+for the item
+*/
 
 .form__fieldset:nth-last-child(4) {
   margin-bottom: -32px;
@@ -45,6 +54,15 @@
   opacity: 100%;
   transition: opacity 0.15s ease-in 0.15s;
   height: 60px;
+  /*NEEDS CORRECTING:
+Please don't use negative margin values unnecessarily, they can lead to content overlap
+or broekn layout when the content changes.
+The design pictured in the brief doesn't require negative margins. Instead, it's necessary
+to revise `margin` and `gap` values that you currently use. There shuold be 32px between
+all elements of the form. Don't use both margin and gap to do it, they sum up and result
+in a bigger value. Choose one way to set this gap: either `gap` for the container or `margin`
+for the item
+*/
   margin-bottom: -32px;
 }
 

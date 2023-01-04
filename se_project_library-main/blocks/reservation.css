@@ -5,6 +5,9 @@
   flex-direction: column;
   color: #000;
   background-color: #d9e7ff;
+  /*NEEDS CORRECTING:
+  The image isn't displayed. Please, correct the file path.
+  */
   background-image: url("./images/background_reservation.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +24,11 @@
 }
 
 .reservation__form {
+  /*NEEDS CORRECTING:
+  The form is now significantly more narrow than in th brief: it's 283px instead of 385px
+  You can either set the width in pixels (use `width`, not `max-width`) or use a combination
+  of width:100% and max-width limit in pixels.
+  */
   max-width: 385px;
   margin: 0 auto;
   margin-bottom: 120px;
